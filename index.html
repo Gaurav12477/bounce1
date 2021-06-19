@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bounce ball!!</title>
+    <link rel="stylesheet" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+    />
+    <style>
+      body {
+        background-color: rgb(159, 221, 240);
+        margin: 0;
+      }
+      h1 {
+        display: flex;
+        font-family: "Dela Gothic One", cursive;
+        text-align: center;
+        justify-content: center;
+        font-size: 60px;
+      }
+      .container {
+        margin: auto;
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        margin: auto;
+      }
+      .container {
+        margin-left: 200px;
+        margin-top: 200px;
+      }
+      .ball {
+        animation: bouncing 0.9s infinite;
+        background-color: rgb(204, 250, 96);
+        border: black solid;
+        border-radius: 50%;
+        position: relative;
+        width: 100px;
+        height: 100px;
+      }
+      @keyframes bouncing {
+        0% {
+          height: 100px;
+          width: 100px;
+          bottom: 0;
+          box-shadow: 0 0 1px rgb(0, 0, 0.7);
+        }
+        25% {
+          height: 100px;
+          width: 100px;
+          box-shadow: rgb(0, 0, 0.3);
+        }
+        50% {
+          height: 80px;
+          width: 110px;
+          transform: translateY(250px);
+        }
+        75% {
+          height: 90px;
+          width: 108px;
+        }
+        100% {
+          bottom: 50px;
+          transform: translateY(0px);
+          box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .bubble {
+        justify-content: center;
+        font-family: "Dela Gothic One", cursive;
+        background-color: rgb(228, 131, 188);
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flexbox;
+        border-radius: 14px;
+        margin-left:400px;
+        margin-right: 100px ;
+        margin-top: 50px;
+        position: relative;
+        float: right;
+        color: rgb(255, 255, 255) ;
+        font-weight:bolder;
+        font-size: 18px;
+        
+      }
+      h4{
+          color: rgb(255, 233, 193);
+      }
+      h2{
+          color: rgb(255, 243, 71);
+          text-decoration: underline;
+      }
+      h1{
+          color: rgb(53, 118, 156);
+          text-decoration: underline wavy rgb(57, 122, 160)
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Bouncing Ball</h1>
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="ball"></div>
+      </div>
+    </div>
+    <div class="bubble">
+      <div class="bubbleh1">
+        <h2>Animation !!</h2>
+      </div>
+      <div>
+        <p>
+            <h4>🅐 What is Animation?</h4>
+            Animation is not the art of making drawings move, but the art of drawing movement. Based on the persistence of vision, animation, like all film, is an illusion of fluid movement, when in fact it is a series of static drawings moving so quickly, twenty-four frames a second, that they give the appearance of movement. While there are many forms of animation, we are going to focus on the three most prominent.
+
+         <h4>🅑 Animation in css</h4>
+         An animation lets an element gradually change from one style to another. You can change as many CSS properties you want, as many times as you want. To use CSS animation, you must first specify some keyframes for the animation. Keyframes hold what styles the element will have at certain times.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
